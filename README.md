@@ -52,7 +52,10 @@ The dataset contains 40,000 entries with 25 columns, many capturing various tech
 
 This dataset contains information that can be used for a detailed analysis of the cybersecurity threats, attack patterns, and the effectiveness of responses.
 
-
+## Tools and Technologies : 
+- Programming Languages :- Python (for analysis and visualisations).
+- Libaries :- Pandas, Matplotlib/Seaborn, Plotly (for visualization), Scikit-learn (if any machine learning is needed for anomaly detection).
+- Data Sources :- Dataset containing cybersecurity events, including attack types, timestamps, geo-location data, and response actions.
 
 
 
