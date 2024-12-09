@@ -85,7 +85,16 @@ Based on the objectives and data analysis we are performing for the CyberSecurit
 
 - Interpretation : The severity of financial damage correlates with the attack's impact, suggesting that stronger preventive measures should be implemented for high-damage attacks.
 
-- Recommendation : Allocate more resources to preventing 
+- Recommendation :Prioritize resurce for preventing high-damage attacks like Malware with advanced detection systems. Conduct regular vulnerability assessments and penetration testing to minimize losses.
+
+### 5. Effectiveness of Preventive Measures :-
+- Findings : Firewalls and IDS/IPS are effective at previnting DDoS and Malware attacks, while logging is better suited for post-events analysis.
+
+- Interpretation : Preventive measures work well, but real-time detection neesds improvement, as logging alone can't stop ongoing attacks.
+
+- Recommendation : Enhance real-time detection systems, improve log analsis, and train staff on phishing and social engineering defenses.
+
+  
 
 
 
