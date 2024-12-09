@@ -94,7 +94,12 @@ Based on the objectives and data analysis we are performing for the CyberSecurit
 
 - Recommendation : Enhance real-time detection systems, improve log analsis, and train staff on phishing and social engineering defenses.
 
-  
+### 6. User Information and Device Vulnerability :-
+- Findings : Admin users and outdated are frequent cyber-attack targets.
+
+- Interpretation : High-value targets and legacy systems are more vulnerable, requrining stronger security.
+
+- Recommendation : Enforce strict access controls, MFA, and regularly update/patch systems.
 
 
 
