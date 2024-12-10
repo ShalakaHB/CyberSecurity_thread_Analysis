@@ -102,27 +102,27 @@ Based on the objectives and data analysis we are performing for the CyberSecurit
 - Recommendation : Enforce strict access controls, MFA, and regularly update/patch systems.
 
 ## Key Outcomes :-
-1. Severity Levels Distribution :
+#### 1. Severity Levels Distribution :
 - Majority of threats are of medium severity, followed by low and high severity.
 
-2. Attack Trends Over Time :
+#### 2. Attack Trends Over Time :
 - Number of attacks fluctuates over time, with certain months showing spikes in activity.
 
-3. Traffic Type and Attack Type :
+#### 3. Traffic Type and Attack Type :
 - Common traffic types include DNS and HTTP.
 - Frequent attack types include DDoS, which spans multiple traffic types.
 
-4. Source of High-Severity Attacks :
+#### 4. Source of High-Severity Attacks :
 - A few Source IP Addresses are responsible for a large proportion of high-severity attacks.
 
-5. Packet and Anomaly Score Pattern :
+#### 5. Packet and Anomaly Score Pattern :
 - Packet Length shows a bimodal distribution, incdicating diverse traffic behaviors.
 - Anomaly Scores are evenly distribution across the range, showing varied threat levels.
 
-6. Correlation Analysis :
+#### 6. Correlation Analysis :
 - Weak correlations among numerical fratures (e.g., Packet Length, Anomaly Scores, Ports).
 
-7. Missing Data :
+#### 7. Missing Data :
 - Significant missing values in critical columns like IDS/IPS Alerts, Firewall Logs, and Proxy Information, indicating incomplete logging or data collection.
 
 
