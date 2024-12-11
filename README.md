@@ -110,7 +110,7 @@ Based on the objectives and data analysis we are performing for the CyberSecurit
 
 #### 3. Traffic Type and Attack Type :
 - Common traffic types include DNS and HTTP.
-- Frequent attack types include DDoS, which spans multiple traffic types.
+- Frequent attack types include DDoS, which spans multiple traffic types. 
 
 #### 4. Source of High-Severity Attacks :
 - A few Source IP Addresses are responsible for a large proportion of high-severity attacks.
