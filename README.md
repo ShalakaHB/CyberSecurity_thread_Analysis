@@ -62,13 +62,17 @@ Based on the objectives and data analysis we are performing for the CyberSecurit
 ### 1. Distribution of Attack Types :-
 - Findings : The analysis of attack types reveals that certain types of cyber-attacks are more prevent. For example, DDoS attack may be the most common, followed by Malware and Phisging.
   
+![distribution of attack type](https://github.com/user-attachments/assets/f3c78354-1b4d-42a1-80b1-13c02e7bf5d9)
+
 - Interpretation : This could suggest that specific cybersecurity protocol (such as DDoS mitigation measures) should be prioritized. It may also indicate that certain attack types are less preventable, indicating a need for better defence strategies or early detection mechanisum.
   
 - Recommendations : Strengthen defense mechanisums against the most common attacks, such as DDoS and Malware.
 
 ### 2. Attack Frequency :-
 - Findings : Time series analysis shows periodic spikes in attack frequency, with attacks peaking during certain months (e.g., major events or holidays).
-  
+
+![cyber attack frequency overtime](https://github.com/user-attachments/assets/cb1868c6-cef6-4f6d-998e-8c835f856e55)
+
 - Interpretation : This coluld highlighted cyber threats during certain times of the year or after major organizational events.
 
 - Recommendation : Focus on enhancing security during peak periods (e.g., implementing stronger defenses or monitoring during holidays or high-profile events).
@@ -76,21 +80,35 @@ Based on the objectives and data analysis we are performing for the CyberSecurit
 ### 3. Targeted Analysis (Region and Organization) :-
 - Findings : Attacks are more frequent in certain regions or oraganizations. For example, certain geographical areas (e.g., North American or Europe) might be more targeted due to their higher digital presence or critical infrastructure.
 
+![region affected by cyber attacks](https://github.com/user-attachments/assets/a9dc42a3-3584-4363-b0af-c7cc9f747c8e)
+
 - Interpretation : This may suggest that some regions or sectors (e.g., finance or tech) are more at risk due to higher-value targets.
+
+![ind_org affected by cybersecurity](https://github.com/user-attachments/assets/47832966-951d-49dc-a02c-c428de07c818)
 
 - Recommentation : Tailor cybersecurity strategies for high-risk regions or industries. Increase monitoring and threat detection for vulnerable regions.
 
 ### 4. Damage Assessment :-
 - Findings : Finacial loss due to cyber-attacks is more significant for certain attack types. For oinstance, Malware attacks may result in higher financial damage compared to others like Phishing.
 
+![distribution of attack type](https://github.com/user-attachments/assets/86f98fea-1935-425d-85f2-c83cae9848c4)
+
 - Interpretation : The severity of financial damage correlates with the attack's impact, suggesting that stronger preventive measures should be implemented for high-damage attacks.
 
+![total finantical loss by cyber attacks](https://github.com/user-attachments/assets/195efa58-20d6-4dfb-9d12-0c269dc57e6a)
+
 - Recommendation :Prioritize resurce for preventing high-damage attacks like Malware with advanced detection systems. Conduct regular vulnerability assessments and penetration testing to minimize losses.
+
+![Attack severity distribution](https://github.com/user-attachments/assets/f1270a51-b191-4d15-a063-8d97b184220a)
 
 ### 5. Effectiveness of Preventive Measures :-
 - Findings : Firewalls and IDS/IPS are effective at previnting DDoS and Malware attacks, while logging is better suited for post-events analysis.
 
+![distribution of actions taken](https://github.com/user-attachments/assets/5f7bcf58-82fe-4fee-80dc-bc1c74785d86)
+
 - Interpretation : Preventive measures work well, but real-time detection neesds improvement, as logging alone can't stop ongoing attacks.
+
+![log source distribution](https://github.com/user-attachments/assets/c3559128-dbee-4582-8b34-ba3b83aaab11)
 
 - Recommendation : Enhance real-time detection systems, improve log analsis, and train staff on phishing and social engineering defenses.
 
