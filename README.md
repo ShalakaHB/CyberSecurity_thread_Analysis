@@ -2,125 +2,127 @@
 
 ![image](https://github.com/user-attachments/assets/88f6444d-7e39-4042-b7f4-7dd0576ef30b)
 
-This project aims to analyse a cybersecurity dataset to understand better the types of attacks, the frequency of occurrences, targets, and the effectiveness of preventative measures. The analysis will help detect cyber-attack patterns, assess their damage, and evaluate how well different cybersecurity protocols have mitigated these threats.
-## Objective 
+This project aims to analyze a cybersecurity dataset to better understand the types of attacks, their frequency, targets, and the effectiveness of preventative measures. The analysis will help detect cyber-attack patterns, assess their damage, and evaluate how well different cybersecurity protocols have mitigated these threats.
+
+## Objective
+
 ### 1. Distribution of Attack Types:
-- Objective:- Categorize and analyze the distribution of various attacks (e.g. DDoS, phishing, malware) to understand which are most reventable.
-- Approach:- Group the attack types from the dataset and visualize the distribution to identify the most common types.
-  
+Objective: Categorize and analyze the distribution of various attacks (e.g., DDoS, phishing, malware) to understand which are most preventable.
+Approach: Group the attack types from the dataset and visualize the distribution to identify the most common types.
+
 ### 2. Attack Frequency (Time Series Analysis):
-- Objective:- Perform a time series analysis on the occurence of attacks to reveal trends, spikes, and periods with higher attack frequency.
-- Approach:- Use the timestamp data to create a time series and observe the frequency and trends of attacks over time, identifying peak periods.
+Objective: Perform a time series analysis on the occurrence of attacks to reveal trends, spikes, and periods with higher attack frequency.
+Approach: Use the timestamp data to create a time series and observe the frequency and trends of attacks over time, identifying peak periods.
 
 ### 3. Target Analysis (Region and Organization):
-- Objective:- Analyze the geo-location and user information to determine which regions, organizations, or industries are the most trageted.
-- Approach:- Use geographic and organisational information to break down attacks by location and industry, helping to identify hight-risk areas.
+Objective: Analyze the geo-location and user information to determine which regions, organizations, or industries are the most targeted.
+Approach: Use geographic and organizational information to break down attacks by location and industry, helping to identify high-risk areas.
 
-### 4. Damage Assess:
-- Objective:- Assess the finacial or operational damage caused by attacks, if avilable in the dataset (via anomaly scores, finacial indicators, or other damage matrics).
-- Approach:- Compare the damage across different attack types and regions to quantify the impact of each type of cyber attack.
+### 4. Damage Assessment:
+Objective: Assess the financial or operational damage caused by attacks, if available in the dataset (via anomaly scores, financial indicators, or other damage metrics).
+Approach: Compare the damage across different attack types and regions to quantify the impact of each type of cyber attack.
 
 ### 5. Preventive Measures (Effectiveness of Protocols):
-- Objective:- Evaluate the effectiveness of different cybersecurity measures by examining responses such as blocking or logging attacks.
-- Approach:- Analyze the action taken (e.g., blocked, logged) and protocol performance metrics to measure how well different security systems handled the attacks.
+Objective: Evaluate the effectiveness of different cybersecurity measures by examining responses such as blocking or logging attacks.
+Approach: Analyze the action taken (e.g., blocked, logged) and protocol performance metrics to measure how well different security systems handled the attacks.
 
-## DataSet Description:
+## Dataset Description:
 The dataset contains 40,000 entries with 25 columns, many capturing various technical details related to cyber-attacks.
 
-1. Timestamp : The date and time when the attack occured.
-2. Source IP Address : The IP Address of the originator of the attack.
-3. Destination IP Adress : The IP Aderss of the target system.
-4. Source Port : The port number used by the scorce system.
-5. Destination Port : The port number targeted on the destination system.
-6. Protocol : The communication portocol used (e.g., TCP, UDP, ICMP).
-7. Packet Lenght : Size of the packet in bytes.
-8. Packet Type : Type of the packet (e.g., Data, Control).
-9. Traffic Type : Type of traffic (e.g., HTTP, DNS).
-10. Payload Date : Cotents of the packets in bytes.
-11. Malware Indicators : Indicators of potentical malware in the packet.
-12. Anomaly Scores : A score indicating how unsual the network activety is.
-13. Alerts/Warning : Alerts or warnings triggered by the attack.
-14. Attack Type : The type of attack (e.g., DDoS, Malware).
-15. Attacks Signature : A unique identifler for the attack pattern.
-16. Action Taken : Action taken by the system (e.g., Bocked, Logged).
-17. Severity Level : Severity of the attack (e.g., Low, Medium, High).
-18. User Information : User associated with the attack or the target.
-19. Device Information : Details about the device involved.
-20. Network Segment : The network segment where the attack occurred.
-21. Geo-location Date : Location of the source IP (city and region)
-22. Proxy Information : Details of the proxy used in the attack.
-23. Firewall Logs : Logs related to firewall activity during the attack.
-24. IDP/IPS : Alerts generated by the Intrusion Detection/Prevention System.
-25. Log Source : The system that logged the events (e.g., Sever, Firewall).
-
+1. Timestamp: The date and time when the attack occurred.
+2. Source IP Address: The IP address of the originator of the attack.
+3. Destination IP Address: The IP address of the target system.
+4. Source Port: The port number used by the source system.
+5. Destination Port: The port number targeted on the destination system.
+6. Protocol: The communication protocol used (e.g., TCP, UDP, ICMP).
+7. Packet Length: Size of the packet in bytes.
+8. Packet Type: Type of the packet (e.g., Data, Control).
+9. Traffic Type: Type of traffic (e.g., HTTP, DNS).
+10. Payload Data: Contents of the packets in bytes.
+11. Malware Indicators: Indicators of potential malware in the packet.
+12. Anomaly Scores: A score indicating how unusual the network activity is.
+13. Alerts/Warnings: Alerts or warnings triggered by the attack.
+14. Attack Type: The type of attack (e.g., DDoS, Malware).
+15. Attack Signature: A unique identifier for the attack pattern.
+16. Action Taken: Action taken by the system (e.g., Blocked, Logged).
+17. Severity Level: Severity of the attack (e.g., Low, Medium, High).
+18. User Information: User associated with the attack or the target.
+19. Device Information: Details about the device involved.
+20. Network Segment: The network segment where the attack occurred.
+21. Geo-location Data: Location of the source IP (city and region).
+22. Proxy Information: Details of the proxy used in the attack.
+23. Firewall Logs: Logs related to firewall activity during the attack.
+24. IDP/IPS: Alerts generated by the Intrusion Detection/Prevention System.
+25. Log Source: The system that logged the events (e.g., Server, Firewall).
+    
 This dataset contains information that can be used for a detailed analysis of the cybersecurity threats, attack patterns, and the effectiveness of responses.
 
-## Tools and Technologies : 
-- Programming Languages :- Python (for analysis and visualisations).
-- Libaries :- Pandas, Matplotlib/Seaborn, Plotly (for visualization), Scikit-learn (if any machine learning is needed for anomaly detection).
-- Data Sources :- Dataset containing cybersecurity events, including attack types, timestamps, geo-location data, and response actions.
+## Programming Languages: Python (for analysis and visualizations).
 
-Based on the objectives and data analysis we are performing for the CyberSecurity Threat Aanlysis Project, here are potential findings that coluld emerge from your analysis :
+Libraries: Pandas, Matplotlib/Seaborn, Plotly (for visualization), Scikit-learn (if any machine learning is needed for anomaly detection).
+Data Sources: Dataset containing cybersecurity events, including attack types, timestamps, geo-location data, and response actions.
+
+Based on the objectives and data analysis we are performing for the CyberSecurity Threat Analysis Project, here are potential findings that could emerge from the analysis:
 
 ### 1. Distribution of Attack Types :-
-- Findings : The analysis of attack types reveals that certain types of cyber-attacks are more prevent. For example, DDoS attack may be the most common, followed by Malware and Phisging.
+- Findings: The analysis of attack types reveals that certain types of cyber-attacks are more prevalent. For example, DDoS attacks may be the most common, followed by Malware and Phishing.
   
 ![distribution of attack type](https://github.com/user-attachments/assets/f3c78354-1b4d-42a1-80b1-13c02e7bf5d9)
 
-- Interpretation : This could suggest that specific cybersecurity protocol (such as DDoS mitigation measures) should be prioritized. It may also indicate that certain attack types are less preventable, indicating a need for better defence strategies or early detection mechanisum.
-  
-- Recommendations : Strengthen defense mechanisums against the most common attacks, such as DDoS and Malware.
+- Interpretation: This suggests that specific cybersecurity protocols (such as DDoS mitigation measures) should be prioritized. It may also indicate that certain attack types are less preventable, necessitating better defense strategies or early detection mechanisms.
+
+- Recommendations: Strengthen defense mechanisms against the most common attacks, such as DDoS and Malware
 
 ### 2. Attack Frequency :-
-- Findings : Time series analysis shows periodic spikes in attack frequency, with attacks peaking during certain months (e.g., major events or holidays).
-
+- Findings: Time series analysis shows periodic spikes in attack frequency, with attacks peaking during certain months (e.g., major events or holidays).
+  
 ![cyber attack frequency overtime](https://github.com/user-attachments/assets/cb1868c6-cef6-4f6d-998e-8c835f856e55)
 
-- Interpretation : This coluld highlighted cyber threats during certain times of the year or after major organizational events.
+- Interpretation: This highlights cyber threats during specific times of the year or after major organizational events.
 
-- Recommendation : Focus on enhancing security during peak periods (e.g., implementing stronger defenses or monitoring during holidays or high-profile events).
+- Recommendation: Focus on enhancing security during peak periods (e.g., implementing stronger defenses or monitoring during holidays or high-profile events).
 
 ### 3. Targeted Analysis (Region and Organization) :-
-- Findings : Attacks are more frequent in certain regions or oraganizations. For example, certain geographical areas (e.g., North American or Europe) might be more targeted due to their higher digital presence or critical infrastructure.
+- Findings: Attacks are more frequent in certain regions or organizations. For example, certain geographical areas (e.g., North America or Europe) might be more targeted due to their higher digital presence or critical infrastructure.
 
 ![region affected by cyber attacks](https://github.com/user-attachments/assets/a9dc42a3-3584-4363-b0af-c7cc9f747c8e)
 
-- Interpretation : This may suggest that some regions or sectors (e.g., finance or tech) are more at risk due to higher-value targets.
+- Interpretation: This suggests that some regions or sectors (e.g., finance or tech) are more at risk due to higher-value targets.
 
 ![ind_org affected by cybersecurity](https://github.com/user-attachments/assets/47832966-951d-49dc-a02c-c428de07c818)
 
-- Recommentation : Tailor cybersecurity strategies for high-risk regions or industries. Increase monitoring and threat detection for vulnerable regions.
+- Recommendations: Tailor cybersecurity strategies for high-risk regions or industries. Increase monitoring and threat detection for vulnerable regions.
 
 ### 4. Damage Assessment :-
-- Findings : Finacial loss due to cyber-attacks is more significant for certain attack types. For oinstance, Malware attacks may result in higher financial damage compared to others like Phishing.
-
+- Findings: Financial loss due to cyber-attacks is more significant for certain attack types. For instance, Malware attacks may result in higher financial damage compared to others like Phishing.
+  
 ![distribution of attack type](https://github.com/user-attachments/assets/86f98fea-1935-425d-85f2-c83cae9848c4)
 
-- Interpretation : The severity of financial damage correlates with the attack's impact, suggesting that stronger preventive measures should be implemented for high-damage attacks.
+- Interpretation: The severity of financial damage correlates with the attack's impact, suggesting that stronger preventive measures should be implemented for high-damage attacks.
 
 ![total finantical loss by cyber attacks](https://github.com/user-attachments/assets/195efa58-20d6-4dfb-9d12-0c269dc57e6a)
 
-- Recommendation :Prioritize resurce for preventing high-damage attacks like Malware with advanced detection systems. Conduct regular vulnerability assessments and penetration testing to minimize losses.
+- Recommendations: Prioritize resources for preventing high-damage attacks like Malware with advanced detection systems. Conduct regular vulnerability assessments and penetration testing to minimize losses.
 
 ![Attack severity distribution](https://github.com/user-attachments/assets/f1270a51-b191-4d15-a063-8d97b184220a)
 
 ### 5. Effectiveness of Preventive Measures :-
-- Findings : Firewalls and IDS/IPS are effective at previnting DDoS and Malware attacks, while logging is better suited for post-events analysis.
+- Findings: Firewalls and IDS/IPS are effective at preventing DDoS and Malware attacks, while logging is better suited for post-event analysis.
 
 ![distribution of actions taken](https://github.com/user-attachments/assets/5f7bcf58-82fe-4fee-80dc-bc1c74785d86)
 
-- Interpretation : Preventive measures work well, but real-time detection neesds improvement, as logging alone can't stop ongoing attacks.
+- Interpretation: Preventive measures work well, but real-time detection needs improvement, as logging alone can't stop ongoing attacks.
 
 ![log source distribution](https://github.com/user-attachments/assets/c3559128-dbee-4582-8b34-ba3b83aaab11)
 
-- Recommendation : Enhance real-time detection systems, improve log analsis, and train staff on phishing and social engineering defenses.
+- Recommendations: Enhance real-time detection systems, improve log analysis, and train staff on phishing and social engineering defenses.
 
 ### 6. User Information and Device Vulnerability :-
-- Findings : Admin users and outdated are frequent cyber-attack targets.
+- Findings: Admin users and outdated systems are frequent cyber-attack targets.
 
-- Interpretation : High-value targets and legacy systems are more vulnerable, requrining stronger security.
+- Interpretation: High-value targets and legacy systems are more vulnerable, requiring stronger security.
 
-- Recommendation : Enforce strict access controls, MFA, and regularly update/patch systems.
+- Recommendations: Enforce strict access controls, MFA, and regularly update/patch systems.
 
 ## Key Outcomes :-
 #### 1. Severity Levels Distribution :
