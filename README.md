@@ -7,24 +7,40 @@ This project aims to analyze a cybersecurity dataset to better understand the ty
 ## Objective
 
 ### 1. Distribution of Attack Types:
-Objective: Categorize and analyze the distribution of various attacks (e.g., DDoS, phishing, malware) to understand which are most preventable.
-Approach: Group the attack types from the dataset and visualize the distribution to identify the most common types.
+
+#### Objective:
+Categorize and analyze the distribution of various attacks (e.g., DDoS, phishing, malware) to understand which are most preventable.
+
+#### Approach: 
+Group the attack types from the dataset and visualize the distribution to identify the most common types.
 
 ### 2. Attack Frequency (Time Series Analysis):
-Objective: Perform a time series analysis on the occurrence of attacks to reveal trends, spikes, and periods with higher attack frequency.
-Approach: Use the timestamp data to create a time series and observe the frequency and trends of attacks over time, identifying peak periods.
+#### Objective: 
+Perform a time series analysis on the occurrence of attacks to reveal trends, spikes, and periods with higher attack frequency.
+
+#### Approach: 
+Use the timestamp data to create a time series and observe the frequency and trends of attacks over time, identifying peak periods.
 
 ### 3. Target Analysis (Region and Organization):
-Objective: Analyze the geo-location and user information to determine which regions, organizations, or industries are the most targeted.
-Approach: Use geographic and organizational information to break down attacks by location and industry, helping to identify high-risk areas.
+#### Objective: 
+Analyze the geo-location and user information to determine which regions, organizations, or industries are the most targeted.
+
+#### Approach: 
+Use geographic and organizational information to break down attacks by location and industry, helping to identify high-risk areas.
 
 ### 4. Damage Assessment:
-Objective: Assess the financial or operational damage caused by attacks, if available in the dataset (via anomaly scores, financial indicators, or other damage metrics).
-Approach: Compare the damage across different attack types and regions to quantify the impact of each type of cyber attack.
+#### Objective: 
+Assess the financial or operational damage caused by attacks, if available in the dataset (via anomaly scores, financial indicators, or other damage metrics).
+
+#### Approach: 
+Compare the damage across different attack types and regions to quantify the impact of each type of cyber attack.
 
 ### 5. Preventive Measures (Effectiveness of Protocols):
-Objective: Evaluate the effectiveness of different cybersecurity measures by examining responses such as blocking or logging attacks.
-Approach: Analyze the action taken (e.g., blocked, logged) and protocol performance metrics to measure how well different security systems handled the attacks.
+#### Objective: 
+Evaluate the effectiveness of different cybersecurity measures by examining responses such as blocking or logging attacks.
+
+#### Approach: 
+Analyze the action taken (e.g., blocked, logged) and protocol performance metrics to measure how well different security systems handled the attacks.
 
 ## Dataset Description:
 The dataset contains 40,000 entries with 25 columns, many capturing various technical details related to cyber-attacks.
